@@ -41,6 +41,6 @@ export const ImageGallery = ({ pictures }) => {
 };
 
 ImageGallery.propTypes = {
-  pictures: PropTypes.array.isRequired,
+  pictures: PropTypes.arrayOf(PropTypes.object).isRequired,
   page: PropTypes.number.isRequired,
 };
